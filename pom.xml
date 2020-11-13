@@ -53,6 +53,8 @@
 		<calculationModuleVersion>1.0</calculationModuleVersion>
 		<reportingModuleVersion>0.9.2</reportingModuleVersion>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<junit.jupiter.version>5.5.2</junit.jupiter.version>
+		<junit.platform.version>1.5.2</junit.platform.version>
 	</properties>
 
     <dependencies>
@@ -132,8 +134,28 @@
             <artifactId>joda-time</artifactId>
             <version>2.2</version>
         </dependency>
+		<dependency>
+			<groupId>org.junit.jupiter</groupId>
+			<artifactId>junit-jupiter-engine</artifactId>
+			<version>${junit.jupiter.version}</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.junit.platform</groupId>
+			<artifactId>junit-platform-runner</artifactId>
+			<version>${junit.platform.version}</version>
+			<scope>test</scope>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.mockito/mockito-all -->
+		<dependency>
+			<groupId>org.mockito</groupId>
+			<artifactId>mockito-all</artifactId>
+			<version>1.10.19</version>
+			<scope>test</scope>
+		</dependency>
 
-    </dependencies>
+
+	</dependencies>
 
 	<build>
 		<pluginManagement>
